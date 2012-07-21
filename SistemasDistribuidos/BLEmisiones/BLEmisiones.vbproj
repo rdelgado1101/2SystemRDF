@@ -109,6 +109,10 @@
       <Project>{08DDE106-2657-47A8-B830-4F38E8167DB9}</Project>
       <Name>BEEmisiones</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAEmisiones\DAEmisiones.vbproj">
+      <Project>{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}</Project>
+      <Name>DAEmisiones</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

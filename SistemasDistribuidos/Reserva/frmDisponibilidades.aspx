@@ -52,7 +52,7 @@
                      </span>                        
                     <div class="price-total">
                         <span>$ <%= item.lobePrice.TotalFare  %> </span>
-                       	<a href="frmReservarVuelo.aspx?id=<%=item.lobeFlight.First.ID %>" class="price active">SELECCIONAR</a>                        	
+                       	<a href="frmReservarVuelo.aspx?id=<%=item.lobeFlight.First.ID %>" class="btn flight">SELECCIONAR</a>                        	
                     </div>
                     <div class="fix"></div>
                 </div>
@@ -83,7 +83,7 @@
                             <!-- *  Logo Aero * -->
                             <div class="aeroline">
                                     <div class="alogo">
-                                    <img src="aerolineas/<%=vuelo.Airline %>.jpg" width="86" height="40" alt="aerolineas/MULT.gif"/>
+                                    <img src="aerolineas/<%=vuelo.Airline %>.jpg" width="86" height="40" alt=""/>
                                     <span class="nair"><%=vuelo.Airline %></span>
                                     <span><strong>N°:</strong><%=vuelo.FlightNumber %></span>
                                     </div>

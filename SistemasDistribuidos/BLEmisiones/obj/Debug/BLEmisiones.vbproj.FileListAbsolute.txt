@@ -9,3 +9,20 @@ C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\GenerateResourc
 C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.dll
 C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.xml
 C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.pdb
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.dll.config
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.pdb
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BEEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\DAEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BEEmisiones.pdb
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\BEEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\DAEmisiones.pdb
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\bin\Debug\DAEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.Resources.resources
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.pdb

@@ -1,0 +1,13 @@
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\bin\Debug\DAEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\bin\Debug\DAEmisiones.pdb
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\bin\Debug\DAEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\bin\Debug\BEEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\bin\Debug\BEEmisiones.pdb
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\bin\Debug\BEEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.Resources.resources
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.dll
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.xml
+C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.pdb

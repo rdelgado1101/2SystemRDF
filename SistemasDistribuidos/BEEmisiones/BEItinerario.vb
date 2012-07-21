@@ -1,4 +1,5 @@
 ﻿Public Class BEItinerario
+    Property IDItinerario As Integer
     Property NumeroVuelo As String
     Property Aerolinea As String
     Property Origen As String
