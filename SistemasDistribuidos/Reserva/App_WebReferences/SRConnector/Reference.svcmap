@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8558d45-a9d1-4cd2-946d-468c758964bf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://66.239.100.162/WCFGDSConnector/Service.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="77c00c7e-8389-491d-9218-ab50def61351" SourceId="1" SourceUrl="http://66.239.100.162/WCFGDSConnector/Service.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="8e37eb1b-eca7-4d9b-b6d7-928d82c383e0" SourceId="1" SourceUrl="http://66.239.100.162/WCFGDSConnector/Service.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="ee1af3d2-f2b1-44f0-8555-4f418f71b009" SourceId="1" SourceUrl="http://66.239.100.162/WCFGDSConnector/Service.svc/mex" />
+    <MetadataFile FileName="BEGDSConnector.xsd" MetadataType="Schema" ID="c5b3f618-5770-4ac3-8136-72b418e81e30" SourceId="1" SourceUrl="http://66.239.100.162/WCFGDSConnector/Service.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="81438170-20b1-4668-9923-cf5c17cd0a8f" SourceId="1" SourceUrl="http://66.239.100.162/WCFGDSConnector/Service.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

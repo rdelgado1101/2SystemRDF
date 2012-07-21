@@ -1,0 +1,10 @@
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\bin\Debug\BEEmisiones.dll
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\bin\Debug\BEEmisiones.pdb
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\bin\Debug\BEEmisiones.xml
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\ResolveAssemblyReference.cache
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.Resources.resources
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\GenerateResource.read.1.tlog
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\GenerateResource.write.1.tlog
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.dll
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.xml
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.pdb

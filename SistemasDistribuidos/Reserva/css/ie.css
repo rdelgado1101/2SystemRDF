@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#engine #all-fields .more{ display:inline; }
+
+
+#Result-List{ display:inline; }
+.item .item-hotel{ display:inline;}
+.item .item-room{ margin-left:5px;}
+.item-options ul.options li{ height:20px; }
+.item-options ul.options li a{ height:20px; }
+.item-room .desc-room{ margin-top:10px;}
+
+#BookDetail{ display:inline; }
+.FormBook{ display:inline; }
+
+#BookDetail .labelBook ul.nigth li{ display:inline;}
+
+.guest  ul.details li .amp{  display:inline;}

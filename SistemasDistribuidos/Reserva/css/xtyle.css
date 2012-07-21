@@ -1,0 +1,185 @@
+html,body,div,span,object,img,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,em,font,fieldset,form,label,input,ol,ul,li{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}a{text-decoration:none;color:black}
+
+a.but{ height:35px; display:block; width:auto; background:url(img/button.gif) no-repeat 0 0; font-size:12px; text-shadow:1px 1px 1px #fff; color:#679e11;}
+.inp-text{ border:1px solid #e1e1e1; padding:2px; background:#fff; color:#6c6c6c; font-size:11px; }
+
+.dafe{background:url(img/cal.gif) #fff no-repeat right 0;}
+
+	
+				  .item-aero .out{ width:760px; height:16px; margin:3px auto; }	
+				  .item-aero .out span{ display:block; line-height:16px; color:#085f80; font-weight:bold; text-transform:uppercase; float:left;}
+				  .item-aero .out .air-detail{ display:block; float:right; width:16px; height:16px; color:#656565; text-indent:-9999px; background:url(img/hide.gif) no-repeat 0 0; }				  .item-aero .out .more{ background-position:0 -16px;}
+			/*
+				Datos Itinerario
+			*/
+			
+
+
+					
+
+
+			/* enDatosItinerario */
+			
+			
+			
+			
+			/*
+				Detalle Pago
+			*/
+			.detallePago{ width:800px; height:auto; margin:0 auto; padding:8px 0;}
+			.detallePago .nota-user{ width:704px; height:auto; padding:8px; margin:5px auto; background:#f7f7f7; line-height:14px; color:#454545; }
+			.detallePago .nota-user strong{ color:#C00; }
+			.detallePago ul.eldetalle{ display:block; width:700px; margin:5px auto; padding:5px 0; }
+			.detallePago ul.eldetalle li{ height:19px; color:#327188; line-height:19px; border-bottom:1px dashed #c9c9c9; font-weight:normal; display:block; }
+			.detallePago ul.eldetalle li:last-child{ border:none;}
+			.detallePago ul.eldetalle li span.dtalle{ float:left; display:block; color:#454545; line-height:19px; }
+			.detallePago ul.eldetalle li span.dtalle strong{ color:#68960E;}
+			.detallePago ul.eldetalle li span.ddtalle{ float:right; display:block; display:block; color:#454545; height:19px; line-height:19px; 
+													   width:80px; padding-left:2px; font-weight:bold;}
+			.detallePago ul.eldetalle li span.ddre{ font:bold 16px Arial; color:#F60; }  
+			.detallePago ul.eldetalle li span.ddtalle strong{ color:#68960E;}
+			h2.dtitulo{ display:block; height:30px; line-height:30px; font-weight:bold; font-size:12px; background:#f8f8f8; color:#656565; }
+			h2.dtitulo span{ display:block; float:left; height:30px; line-height:30px; width:22px; margin-right:4px; padding-left:8px; font-size:12px; font-weight:bold; 
+			background:url(img/num.gif) no-repeat 0 0; color:#fff; }
+			/*
+				Datos Formulario
+			*/
+			
+			
+			
+			.masDetalle{ width:720px; height:auto; margin: 8px auto 0 auto; border-bottom:1px dashed #c9c9c9; }
+			.masDetalle h2{ display:block; height:24px; line-height:20px; color:#5c9807; }
+			.us-end{ border-bottom:none;} 
+			.us-end .pay-user { border-bottom:1px solid #e8e8e8; color:#454545;}
+			.us-end .pay-user span{ color:#5c9807; width:180px; display:block; float:left; }
+			
+			.lease{ width:720px; margin:0 auto; padding-top:8px; }
+			.lease .import{ display:block;  padding:5px; color:#454545; text-align:justify; font:normal 11px Arial; }
+			.lease .import strong{ display:block; padding-bottom:4px; color:#cb0000; }
+			
+			.lease a{ color:#069; text-decoration:underline; }
+			
+			.masDetalle .dato{ display:block; width:142px; float:left; height:40px; margin-right:14px; margin-bottom:8px; }
+			.masDetalle .dato span.obli:after{ content:" *"; color:#F00;}
+			
+			.masDetalle .dato .txt{ border-color:#9CC1D0; width:138px;}
+			.masDetalle .dato .sele{ padding:1px 2px; border-color:#9CC1D0; }
+			.masDetalle .dato .big{ width:138px;}
+			.masDetalle .dato span{ display:block; height:16px; line-height:16px; color:#555;}
+			.masDetalle .dato .wise{ height:14px; }
+			.masDetalle .mgin{ margin-left:70px;}
+			.masDetalle .fono{ width:98px; }.masDetalle .fono .number{ width:94px; }
+
+			.masDetalle .fre{ width:222px; border:1px dashed #e4e4e4; background:#f8f8f8; padding:6px; }
+			.masDetalle .fre .type{ width:120px; float:left; padding-top:1px; }
+			.masDetalle .fre .code{ width:80px; float:left; margin-top:2px; margin-left:10px;  } 
+			
+			/**/		
+			.masDetalle .titulo{ width:60px; margin-right:10px;}.masDetalle .titulo .sele{ width:54px;}
+			.masDetalle .nmg{ margin-right:0;}
+			
+			/**/
+			.masDetalle .birth{ width:180px; margin-right:0; }.masDetalle .birth .pais{ width:172px;}
+			
+			.nob{ border:none;}
+						
+			/* 
+			endDetalle Pago
+			*/
+			
+			.medioPago{ width:720px; margin:8px auto; height:auto; }
+			.medioPago span.readPay{ display:block; line-height:14px; color:#454545; background:url(img/attent.png) no-repeat 0 0; padding-left:20px; float:left; width:400px; }
+			.medioPago .secure{ width:132px; height:auto; float:right; }
+			.medioPago ul.Pay{ display:block; width:720px; height:auto; margin:8px auto; }
+			.medioPago ul.Pay li{ display:block; height:auto; padding-bottom:4px; background:url(img/pay/bg.gif) repeat-x 0 top; padding-left:5px;}
+			.medioPago ul.Pay li .tiPay{ display:block; height:auto; position:relative; padding:5px 0;} 
+			.medioPago ul.Pay li .chkPay{ position:absolute; top:8px;}
+			.medioPago ul.Pay li .tiPay span{ display:block; height:20px; line-height:20px; font-weight:bold; padding-left:20px; color:#1a8cbc; text-shadow:1px 1px 1px #fff;}
+			.medioPago ul.Pay li .dis{ padding-bottom:0;}
+			.medioPago ul.Pay li .dis span{ color:#787878; padding-bottom:0;}
+			.medioPago ul.Pay li .contPay{ display:block; width:720px; height:auto; display:none;}
+			.medioPago ul.Pay li .logoPay, .medioPago ul.Pay li .textPay{ float:left; display:block;}
+			.medioPago ul.Pay li .logoPay{ width:136px; height:42px; margin:0 15px 0 0; }
+			.medioPago ul.Pay li .textPay{ width:560px; height:auto; color:#555; text-align:justify; }
+			.medioPago ul.Pay li .textPay .link-visa{ text-decoration:underline; font-weight:bold; color:#057aab;}
+			
+			.termino{ width:728px; height:auto; margin:5px auto; border:1px dashed #c9c9c9; background:#f8f8f8; }
+			.termino .view-term{ display:block; color:#0b739f; padding-top:5px; padding-left:35px; line-height:20px; text-decoration:underline; }
+			.termino p{ padding:6px; color:#676767; } 
+			.termino p input{ float:left; display:block; margin:0 8px 20px 0;}
+			
+			/* Footer-Book --- visa */
+			
+		/* -- Visa --  */
+		.footer-book{ display:block; height:auto; padding:8px 0 0 0; }
+		.footer-book a.reservar span{ display:block; text-align:center; width:100px; padding:11px 0; font-size:12px; }
+
+		.vi-sa{ width:340px; height:80px; padding:0; float:left; }
+		.vi-sa a{ padding:0; display:block; width:auto; height:60px; float:left; }
+		.vi-sa .visa{ width:94px; height:auto; padding:13px 0;}
+		.vi-sa .veri{ width:80px; height:60px; margin:0 26px; }
+		.vi-sa .afil{ width:112px; height:55px; padding-top:2px;}
+		.vi-sa img{ border:none; margin:0; }
+		.vi-sa span{ display:block; font:normal 10px Tahoma; color:#454545; padding:4px 0;  clear:both; }
+			
+		.footer-book .air-book{ float:right; width:140px; }
+		.footer-book .air-book a{ display:block; margin-top:8px;}
+			
+			
+			
+			.active{ background:url(img/bgactive.gif) repeat-x 0 0  ; border:1px solid #c3e8f8;}
+
+#Result-list #BookDetail{ width:288px; border:1px solid #c3e8f8; height:auto; margin-left:2px; background:url(img/bgactive.gif) no-repeat 0 0; padding:4px 10px; float:left;
+						  border-radius:4px; -moz-border-radius:4px;  -webkit-border-radius:4px; } 
+			 #BookDetail .labelBook{ width:auto; height:auto; margin-bottom:8px; }
+			 			 .labelBook .dTit,.labelBook .dBoo{ display:block; line-height:20px; font-weight:bold; }
+			 			 .labelBook .dTit{ color:#454545; font-weight:normal;}
+						 
+						 .labelBook .dBoo{ color:#007cb5; }
+						 .descH{ display: block; font:normal 11px Tahoma; color:#4c7c07; padding:2px 0; }
+						 .labelBook img{ margin-right:5px;}
+	         #BookDetail .min-prices .dTit,#BookDetail .min-prices .dBoo{ float:left; padding-bottom:8px; line-height:16px;  }
+			 
+			 #BookDetail .tn{ padding-bottom:0; margin-bottom:4px;}
+			 
+			 #BookDetail .min-prices .dTit{ width:186px;}
+			 #BookDetail .min-prices .dBoo{ width:100px; text-align:right; }
+			 #BookDetail .min-prices .r-sze{ width:auto; padding-right:4px; }
+			 #BookDetail .min-prices .Nprice{ float:right; line-height:16px; text-decoration:underline; color:#656565; }
+			 #BookDetail .check{ float:left; width:144px; }
+			 #BookDetail .numbep{ float:left; width:96px;}
+			 #BookDetail .break{ padding-bottom:5px; border-bottom:1px solid #c3e8f8; }
+			 #BookDetail .total{ margin-bottom:0;}
+			 #BookDetail .total .dTit{ width:80px; padding-bottom:2px;}
+			 #BookDetail .total .dBoo{ width:208px; font: bold 18px Arial; color:#fe8a02;padding-bottom:2px;}
+			 #BookDetail .total .dBoo strong{ font-size:11px;}
+			 
+			 
+			  #BookDetail .labelBook ul.nigth{  width:auto; height:auto; display:none; margin:0; padding:0; list-style:none; float:left; padding-bottom:2px;
+			  	
+			  }
+			  #BookDetail .labelBook ul.nigth li{ display:block; padding:0; width:90px; float:left; height:auto; border:1px solid #dfdfdf; margin:2px; }
+			  #BookDetail .labelBook ul.nigth li .dTit, #BookDetail .labelBook ul.nigth li .dBoo{ width:90px; display:block; line-height:16px; text-align:center; }
+			  #BookDetail .labelBook ul.nigth li .dTit{ font-weight:normal; background:url(img/bgdate.gif) repeat-x 0 0; color:#656565; border-bottom:1px solid #dfdfdf; }
+			  #BookDetail .labelBook ul.nigth li .dBoo{ color:#1391b1;  width:90px;} 
+			 
+p.note{ display:block; width:810px; margin:6px auto; padding:5px; color:#6a6a6a;  }
+
+.restric{ width:920px; height:auto; padding:5px; margin:12px auto;}
+.restric strong{ display:block; line-height:16px; color:#007cb5; }
+.restric ul{ display:block; padding: 0 5px; }
+.restric ul li{ display:block; padding:6px 0; padding-left:10px; color:#454545; background:url(img/arrow_e.gif) no-repeat -4px 5px;}
+
+#footer{ width:826px; height:20px; margin:0; background:url(http://images.costamaragencias.com/imagenes/eCommerceTest/miquel/img-source/bgfooter.png) no-repeat center top; }
+				  
+body>div#overlay{ position:fixed !important;  background:rgba(208,208,208, .7) !important;}
+#overlay{ position:absolute; width:100%; height:100%; top:0; left:0; z-index:9; background:#f6f6f6; }
+
+.error{ border:1px solid #e0d883; padding:10px; color:#353535; height:auto; width:560px; margin:6px auto; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; background:#fffadf; }
+.error img,.error p{ display:block; float:left;}
+.error img{ margin-right:10px;}
+.error p strong,.error p span,.error p a{ display:block; padding:2px;}
+.error p strong{  padding:4px 0; color:#d70000;}
+.error p a{ color:#006ea1; text-decoration:underline;}
+
+

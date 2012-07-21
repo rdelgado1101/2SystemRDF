@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BEGDSConnector" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BEGDSConnector" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="BEPnr">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aian" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaggageQuantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaggageWeight" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BkAgent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Branch" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destiny" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endorsement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Executive" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FareBasisCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightRules" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IataCommission" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Impresora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NetRemitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PNR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecievedFrom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Seats" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TkAgent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalDiscount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TourCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidatingCarrier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="blnHasTA" type="xs:boolean" />
+      <xs:element minOccurs="0" name="blnIsTSANeeded" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loAccountData" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="loItinerary" nillable="true" type="tns:ArrayOfBEPnr.Itinerary" />
+      <xs:element minOccurs="0" name="loPassengers" nillable="true" type="tns:ArrayOfBEPnr.Passengers" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loRemarks" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="oBEGDSCredential" nillable="true" type="tns:BEGDSCredential" />
+      <xs:element minOccurs="0" name="oFOP" nillable="true" type="tns:BEPnr.FOP" />
+      <xs:element minOccurs="0" name="oGDS" type="tns:BEPnr.GDS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEPnr" nillable="true" type="tns:BEPnr" />
+  <xs:complexType name="ArrayOfBEPnr.Itinerary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEPnr.Itinerary" nillable="true" type="tns:BEPnr.Itinerary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEPnr.Itinerary" nillable="true" type="tns:ArrayOfBEPnr.Itinerary" />
+  <xs:complexType name="BEPnr.Itinerary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Airline" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BoardPoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Classes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeShare" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OffPoint" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEPnr.Itinerary" nillable="true" type="tns:BEPnr.Itinerary" />
+  <xs:complexType name="ArrayOfBEPnr.Passengers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEPnr.Passengers" nillable="true" type="tns:BEPnr.Passengers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEPnr.Passengers" nillable="true" type="tns:ArrayOfBEPnr.Passengers" />
+  <xs:complexType name="BEPnr.Passengers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Age" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Base" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Discount" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Document" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FOP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fee" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Monto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PassengerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaxName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PositionId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Taxes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TicketNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oFOP" nillable="true" type="tns:BEPnr.FOP" />
+      <xs:element minOccurs="0" name="oFareData" nillable="true" type="tns:BEPnr.FareData" />
+      <xs:element minOccurs="0" name="oSSR" nillable="true" type="tns:ArrayOfBEPnr.SSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEPnr.Passengers" nillable="true" type="tns:BEPnr.Passengers" />
+  <xs:complexType name="BEPnr.FOP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CCApproval" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CCExpDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CCNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CCType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FOP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEPnr.FOP" nillable="true" type="tns:BEPnr.FOP" />
+  <xs:complexType name="BEPnr.FareData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fare" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Taxes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Total" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loFareBasisCode" nillable="true" type="q3:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEPnr.FareData" nillable="true" type="tns:BEPnr.FareData" />
+  <xs:complexType name="ArrayOfBEPnr.SSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEPnr.SSR" nillable="true" type="tns:BEPnr.SSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEPnr.SSR" nillable="true" type="tns:ArrayOfBEPnr.SSR" />
+  <xs:complexType name="BEPnr.SSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NME_POS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SSR_COD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SSR_TXT" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEPnr.SSR" nillable="true" type="tns:BEPnr.SSR" />
+  <xs:complexType name="BEGDSCredential">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SabreLogin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SabrePassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEGDSCredential" nillable="true" type="tns:BEGDSCredential" />
+  <xs:simpleType name="BEPnr.GDS">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Amadeus" />
+      <xs:enumeration value="Sabre" />
+      <xs:enumeration value="Worldspan" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BEPnr.GDS" nillable="true" type="tns:BEPnr.GDS" />
+  <xs:complexType name="BERequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AirlinePreference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConnectionCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureHour" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destiny" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FlightOption" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MinusArrivalDays" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinusDepartureDays" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NativeRequestPS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumAdt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumAlternatives" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumChd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumInf" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlusArrivalDays" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlusDepartureDays" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RadiuosDestiny" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RadiuosOrigin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StopOverType" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loAirlines" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loCabinClass" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loExcludedAirlines" nillable="true" type="q7:ArrayOfstring" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="loExcludedCities" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element minOccurs="0" name="oBEGDSCredential" nillable="true" type="tns:BEGDSCredential" />
+      <xs:element minOccurs="0" name="oGDS" type="tns:GDS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BERequest" nillable="true" type="tns:BERequest" />
+  <xs:simpleType name="GDS">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Amadeus" />
+      <xs:enumeration value="Sabre" />
+      <xs:enumeration value="Worldspan" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GDS" nillable="true" type="tns:GDS" />
+  <xs:complexType name="ArrayOfBEAvailabilityResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEAvailabilityResponse" nillable="true" type="tns:BEAvailabilityResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEAvailabilityResponse" nillable="true" type="tns:ArrayOfBEAvailabilityResponse" />
+  <xs:complexType name="BEAvailabilityResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="lobeFlight" nillable="true" type="tns:ArrayOfBEAvailabilityResponse.BEFlight" />
+      <xs:element minOccurs="0" name="lobePrice" nillable="true" type="tns:BEAvailabilityResponse.BEPrice" />
+      <xs:element minOccurs="0" name="lobePriceDetail" nillable="true" type="tns:ArrayOfBEAvailabilityResponse.BEPriceDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEAvailabilityResponse" nillable="true" type="tns:BEAvailabilityResponse" />
+  <xs:complexType name="ArrayOfBEAvailabilityResponse.BEFlight">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEAvailabilityResponse.BEFlight" nillable="true" type="tns:BEAvailabilityResponse.BEFlight" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEAvailabilityResponse.BEFlight" nillable="true" type="tns:ArrayOfBEAvailabilityResponse.BEFlight" />
+  <xs:complexType name="BEAvailabilityResponse.BEFlight">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Airline" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalDay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalHour" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalMinute" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalMonth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClassService" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureDay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureHour" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureMinute" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureMonth" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destiny" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GDS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtherDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StopQuantity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="loBEFlightDetails" nillable="true" type="tns:ArrayOfBEAvailabilityResponse.BEFlight" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEAvailabilityResponse.BEFlight" nillable="true" type="tns:BEAvailabilityResponse.BEFlight" />
+  <xs:complexType name="BEAvailabilityResponse.BEPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseFare" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FareType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Taxes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalFare" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEAvailabilityResponse.BEPrice" nillable="true" type="tns:BEAvailabilityResponse.BEPrice" />
+  <xs:complexType name="ArrayOfBEAvailabilityResponse.BEPriceDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BEAvailabilityResponse.BEPriceDetail" nillable="true" type="tns:BEAvailabilityResponse.BEPriceDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBEAvailabilityResponse.BEPriceDetail" nillable="true" type="tns:ArrayOfBEAvailabilityResponse.BEPriceDetail" />
+  <xs:complexType name="BEAvailabilityResponse.BEPriceDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseFare" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberOfPaxes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaxType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalFare" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BEAvailabilityResponse.BEPriceDetail" nillable="true" type="tns:BEAvailabilityResponse.BEPriceDetail" />
+</xs:schema>

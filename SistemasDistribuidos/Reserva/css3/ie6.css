@@ -1,0 +1,18 @@
+/* IE6 */
+
+.line{ overflow:hidden;}
+#site-header #head-wrap #site-connect .social a{ display:inline; overflow:hidden; text-indent:-9999px;}
+#site-header #head-wrap #site-connect .social span{ text-align:center; }
+#book-flyer #flyer { margin-left:8px;}
+.Form .field{ padding:8px 0;}
+
+    .Form .left{ margin-right:4px; }
+    .Form .select{ height:28px; }
+    .Form .Hcity .itxt{ width:320px; }
+    .Form .Hro .itxt{ width:90px;}
+    .Form .ages{ padding-left:10px;  }
+    .Form .ages .age{ margin-left:11px;}
+	.Form .gore{ width:174px;}
+    .Form .gore .itxt{ width:172px;}
+    .Form .gore .dt{ width:90px;}
+	.Form .gore .hr{ width:80px;}

@@ -1,0 +1,10 @@
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\bin\Debug\Emisiones.exe
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\bin\Debug\Emisiones.pdb
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\bin\Debug\Emisiones.xml
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\Emisiones.Resources.resources
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\Emisiones.exe
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\Emisiones.xml
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\Emisiones\obj\x86\Debug\Emisiones.pdb

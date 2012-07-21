@@ -1,0 +1,11 @@
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.dll.config
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.dll
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.pdb
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\bin\Debug\BLEmisiones.xml
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\ResolveAssemblyReference.cache
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.Resources.resources
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\GenerateResource.read.1.tlog
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\GenerateResource.write.1.tlog
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.dll
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.xml
+C:\b\Microsoft\01 UPC\SistemasDistribuidos\BLEmisiones\obj\Debug\BLEmisiones.pdb

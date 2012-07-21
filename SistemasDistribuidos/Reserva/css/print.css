@@ -1,0 +1,31 @@
+body{
+	font:normal 9pt Tahoma, Geneva, sans-serif;
+	background:#fff;
+	margin:0;
+	padding:0;
+	}
+	
+#wrap{
+	background:none;
+	}
+	
+#header, #footer{ background:none; }
+#header #nav-logoea .nav,#header #nav-logoea .logoea img.lw{ display:none;}
+#header #nav-logoea{ width:210px; height:100px; }
+#header #nav-logoea .logoea{ width:210px; height:100px; margin:0; } 
+#header #nav-logoea .logoea img.lp{ display:block; visibility:visible;}
+
+
+
+#box-title-filter .box-title h2 span{ font-size:12pt; }
+/* Reultado Book */
+#Result-list .item{ border:none; margin:4px 0;}
+
+.us-end .pay-user span{ color:#5c9807; width:200px; display:block; float:left; }+
+
+#Result-list .lease{ font:normal 7pt Arial; }
+
+#print{ display:none;}
+
+
+

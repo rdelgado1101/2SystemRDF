@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="" namespace="http://schemas.datacontract.org/2004/07/BEGDSConnector" />
+      <xsd:import schemaLocation="" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_retrievePNRData_InputMessage">
+    <wsdl:part name="parameters" element="tns:retrievePNRData" />
+  </wsdl:message>
+  <wsdl:message name="IService_retrievePNRData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:retrievePNRDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getOTAMessageTkting_InputMessage">
+    <wsdl:part name="parameters" element="tns:getOTAMessageTkting" />
+  </wsdl:message>
+  <wsdl:message name="IService_getOTAMessageTkting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getOTAMessageTktingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_retrieveFlightAvailability_InputMessage">
+    <wsdl:part name="parameters" element="tns:retrieveFlightAvailability" />
+  </wsdl:message>
+  <wsdl:message name="IService_retrieveFlightAvailability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:retrieveFlightAvailabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_bookFlight_InputMessage">
+    <wsdl:part name="parameters" element="tns:bookFlight" />
+  </wsdl:message>
+  <wsdl:message name="IService_bookFlight_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bookFlightResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_NativeMode_InputMessage">
+    <wsdl:part name="parameters" element="tns:NativeMode" />
+  </wsdl:message>
+  <wsdl:message name="IService_NativeMode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NativeModeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getTickets_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTickets" />
+  </wsdl:message>
+  <wsdl:message name="IService_getTickets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTicketsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_cancelPNR_InputMessage">
+    <wsdl:part name="parameters" element="tns:cancelPNR" />
+  </wsdl:message>
+  <wsdl:message name="IService_cancelPNR_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cancelPNRResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="retrievePNRData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/retrievePNRData" message="tns:IService_retrievePNRData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/retrievePNRDataResponse" message="tns:IService_retrievePNRData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getOTAMessageTkting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getOTAMessageTkting" message="tns:IService_getOTAMessageTkting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getOTAMessageTktingResponse" message="tns:IService_getOTAMessageTkting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFlightAvailability">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/retrieveFlightAvailability" message="tns:IService_retrieveFlightAvailability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/retrieveFlightAvailabilityResponse" message="tns:IService_retrieveFlightAvailability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bookFlight">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/bookFlight" message="tns:IService_bookFlight_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/bookFlightResponse" message="tns:IService_bookFlight_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NativeMode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/NativeMode" message="tns:IService_NativeMode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/NativeModeResponse" message="tns:IService_NativeMode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTickets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getTickets" message="tns:IService_getTickets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getTicketsResponse" message="tns:IService_getTickets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelPNR">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/cancelPNR" message="tns:IService_cancelPNR_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/cancelPNRResponse" message="tns:IService_cancelPNR_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retrievePNRData">
+      <soap:operation soapAction="http://tempuri.org/IService/retrievePNRData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOTAMessageTkting">
+      <soap:operation soapAction="http://tempuri.org/IService/getOTAMessageTkting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFlightAvailability">
+      <soap:operation soapAction="http://tempuri.org/IService/retrieveFlightAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookFlight">
+      <soap:operation soapAction="http://tempuri.org/IService/bookFlight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NativeMode">
+      <soap:operation soapAction="http://tempuri.org/IService/NativeMode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTickets">
+      <soap:operation soapAction="http://tempuri.org/IService/getTickets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelPNR">
+      <soap:operation soapAction="http://tempuri.org/IService/cancelPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://costamar-38f268/WCFGDSConnector/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

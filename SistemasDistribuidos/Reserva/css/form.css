@@ -1,0 +1,69 @@
+/* CSS Document */
+
+.FormBook{ width:610px; float:left; margin-left:16px;}
+.detailBook{ width:600px; height:auto; margin:0 auto;  }
+.line{ border-bottom:1px solid #e9e9e9; margin-bottom:12px; }
+.guest{  margin-bottom:5px; }
+.card{ }
+
+
+.end{ width:780px; margin:0 auto; float:none;}
+.end .detailBook{ width:780px;}
+.nospace{ width:698px; border:1px solid #d8d8d8; border-bottom:none;}
+
+
+
+.term{ width:920px; margin:5px auto; padding:5px; border:1px dashed #d6d6d6; background:#f8f8f8; }
+h2.section{ font:bold 11px Tahoma, Geneva, sans-serif; color:#5c9807; display:block; height:30px; line-height:30px; }
+h2.gue{ padding-left:4px; color:#555; }
+
+h2.certi{ padding-bottom:6px; padding-top:4px;width:586px;border-top:1px solid #aac782; }
+h2.certi span{ float:left;}
+h2.certi #certified{ float:right; margin-right:2px;}
+h2.pri{color:#555; }
+.term p{ font-size:11px; color:#666; }
+.term p.acepter{ position:relative; padding:8px 0; padding-left:18px; }
+.term p.acepter .acept{ position:absolute; top:8px; left:0; *left:-22px; margin:0; padding:0; height:12px; width:12px;}
+
+ul.details, ul.details li{ width:auto; margin:0; padding:0; list-style:none; display:block; height:auto; /*background:#fff;*/ }
+ul.details li .label{ display:block; width:300px; margin:0 auto; min-height:30px; height:auto; float:left; /*padding-bottom:10px;*/ }/**/
+
+ul.details li .small{ width:234px; }
+
+ul.details li .smalie{ width:177px; }
+ul.details li span.deCheck{ display:block; line-height:30px; height:30px; position:relative; padding-left:20px; color:#666; } 
+ul.details li span.deCheck input.chk{padding:0; margin:0; color:#333; position:absolute; left:0; top:6px; }
+.label span.deName{ color:#555; line-height:30px; height:30px; display:block; float:left; padding-right:8px; padding-left:4px; width:86px; }
+.label span.dato{ line-height:30px; color:#555; font-weight:bold; display:block; float:left; height:auto; width:368px; }/**/
+.label input[type=radio]{ width:16px; height:16px; padding:0; margin:0; position:relative; top:-3px;  }
+.label span.noda{ width:auto; }/**/
+.label span.obli:after{ content:" *"; color:#F00;}
+.label span.focus{ font-size:12px; color:#007cb5; letter-spacing:1px;}
+
+.label img{ margin-top:4px;}
+.label select{ display:block;  padding:2px; float:left; margin:4px 6px 0 0; border:1px solid #9cc1d0; color:#4c4c4c; font: normal 11px Tahoma;}
+
+.label input.txt{ display:block; padding:2px; border:1px solid #9cc1d0; background:#fff; width:120px; float:left; margin:4px 0 0 0; color:#4c4c4c;   }
+.label input.max{ width:180px;}
+
+a.reservar{ display:block; width:121px; margin:0 auto;}
+a.reservar span{ display:block; text-align:center; width:100px; padding:11px 0; font-size:14px; }
+
+.guest ul.details{ border-bottom:1px solid #e2e2e2; width:586px;}
+.guest ul.details:last-child{ border:none;}
+
+.guest h2.section{ border-top:1px solid #aac782; width:586px; }
+.guest h2.gue{ border:none;   }
+
+.guest  ul.details li .label{ width:285px;}
+.guest  ul.details li .amp{ margin-right:16px;}
+.guest ul.details li .smage{ width:195px; }
+/* end */
+
+.end  ul.details li .label{ width:390px; padding-bottom:10px;}
+.end  .label .dato{ width:290px; }
+.end  ul.details li .small{ width:260px; }
+.end  ul.details li .noda{ width:auto; }
+.nospace h2{ background:#f4f4f4; padding-left:4px; color:#454545; border-bottom:1px solid #d8d8d8; }
+.nospace ul.details li{ border-bottom:1px solid #d8d8d8;}
+.nospace ul.details li .label{ padding:0;}
