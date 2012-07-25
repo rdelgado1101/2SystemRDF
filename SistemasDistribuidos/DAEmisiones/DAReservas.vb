@@ -37,7 +37,7 @@ Public Class DAReservas
         Dim oBEItinerario As BEItinerario
         Using cnx = New SqlConnection("Data Source=.;DataBase=Emisiones;Integrated Security=true;")
             cnx.Open()
-            Dim cmd As New SqlCommand("sp_InsertBEItinerario", cnx)
+            Dim cmd As New SqlCommand("sp_RetrieveBEItinerario", cnx)
             cmd.CommandType = CommandType.StoredProcedure
 
             With cmd.Parameters
@@ -51,14 +51,14 @@ Public Class DAReservas
                     oBEItinerario = New BEItinerario
                     With oBEItinerario
                         .IDItinerario = oReader.GetInt32(0)
-                        .NumeroVuelo = oReader.GetString(1)
-                        .Aerolinea = oReader.GetString(2)
-                        .Origen = oReader.GetString(3)
-                        .Destino = oReader.GetString(4)
-                        .FechaSalida = oReader.GetString(5)
-                        .FechaRetorno = oReader.GetString(6)
-                        .HoraSalida = oReader.GetString(7)
-                        .HoraLlegada = oReader.GetString(8)
+                        .NumeroVuelo = oReader.GetString(2)
+                        .Aerolinea = oReader.GetString(3)
+                        .Origen = oReader.GetString(4)
+                        .Destino = oReader.GetString(5)
+                        .FechaSalida = oReader.GetString(6)
+                        .FechaRetorno = oReader.GetString(7)
+                        .HoraSalida = oReader.GetString(8)
+                        .HoraLlegada = oReader.GetString(9)
                     End With
                     loBEItinerario.Add(oBEItinerario)
                 End While

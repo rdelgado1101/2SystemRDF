@@ -48,16 +48,16 @@
             <div class="item">
                 <div class="tax-fees">
                     <span class="taxfee">
-                       	    ($<%= item.lobePrice.BaseFare%> + $ <%= item.lobePrice.Taxes %> Impuestos y Tasas) Los precios son cotizaciones en dólares
+                       	    (Impuestos y Tasas) Los precios son cotizaciones en dólares
                      </span>                        
                     <div class="price-total">
-                        <span>$ <%= item.lobePrice.TotalFare  %> </span>
-                       	<a href="frmReservarVuelo.aspx?id=<%=item.lobeFlight.First.ID %>" class="btn flight">SELECCIONAR</a>                        	
+                        <span>$ <%= item.PrecioTotal%> </span>
+                       	<a href="frmReservarVuelo.aspx?id=<%=item.loItinerario.First.IDItinerario %>" class="btn flight">SELECCIONAR</a>                        	
                     </div>
                     <div class="fix"></div>
                 </div>
                     
-                    <% For Each vuelo In item.lobeFlight%>
+                    <% For Each vuelo In item.loItinerario%>
                     <div class="item-aero outbund">
                     		<div class="out">
                             	<span>Itinerario</span>                                
@@ -67,13 +67,13 @@
                                             		<!-- * Cabecera Destinos y Paradas etc *-->
                             <div class="desta">
                                 <div class="destax">
-                                    <span><strong>Desde:</strong><%= vuelo.Origin %></span>
-                                    <span><strong>Hasta:</strong><%= vuelo.Destiny %></span>
+                                    <span><strong>Desde:</strong><%= vuelo.Origen %></span>
+                                    <span><strong>Hasta:</strong><%= vuelo.DEstino %></span>
                                     <div class="clear"></div>
                                 </div> 
                                                         
                                 <div class="destax mx">
-                                    <span><strong class="par">N° Paradas:</strong> <%= vuelo.StopQuantity%> </span>
+                                    <span><strong class="par">N° Paradas:</strong>0</span>
                                 </div>  
                                 <div class="fix"></div>                                      
                             </div>
@@ -83,33 +83,30 @@
                             <!-- *  Logo Aero * -->
                             <div class="aeroline">
                                     <div class="alogo">
-                                    <img src="aerolineas/<%=vuelo.Airline %>.jpg" width="86" height="40" alt=""/>
-                                    <span class="nair"><%=vuelo.Airline %></span>
-                                    <span><strong>N°:</strong><%=vuelo.FlightNumber %></span>
+                                    <img src="aerolineas/<%=vuelo.Aerolinea %>.jpg" width="86" height="40" alt=""/>
+                                    <span class="nair"><%=vuelo.Aerolinea %></span>
+                                    <span><strong>N°:</strong><%=vuelo.NumeroVuelo  %></span>
                                     </div>
                             </div>
                             <!-- endAero-->
                             <!-- * Datos * -->
                             <div class="date-time">
                                     <strong>Salida:</strong>
-                                    <span><%= vuelo.DepartureHour %>:<%= vuelo.DepartureMinute %> hrs.  </span>
-                                    <span><%= vuelo.DepartureDay %>/<%= vuelo.DepartureMonth%></span>
-                                    <span><%= vuelo.Origin %></span>
+                                    <span><%= vuelo.HoraSalida%> hrs.  </span>
+                                    <span><%= vuelo.FechaSalida %></span>
+                                    <span><%= vuelo.Origen  %></span>
                         </div>
                                                     
                             <div class="date-time">
                                     <strong>Llegada</strong>
-                                    <span><%= vuelo.ArrivalHour%>:<%= vuelo.ArrivalMinute  %> hrs.</span>
-                                    <span><%= vuelo.ArrivalDay%>/<%= vuelo.ArrivalMonth%></span>
-                                    <span><%= vuelo.Destiny %></span>
+                                    <span><%= vuelo.HoraLlegada %> hrs.</span>
+                                    <span><%= vuelo.FechaRetorno %></span>
+                                    <span><%= vuelo.Destino  %></span>
                             </div>
                             <!-- * enDatos * -->
                     <div class="fix"></div>
                     </div>                 
                 </div>
-                                        
-                                       
-                    	
                     </div>
                     <% next%>
                 <div class="fix"></div>	
