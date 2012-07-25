@@ -5,29 +5,21 @@ Partial Class _Default
     Private loMeses As New List(Of String) From {"JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"}
     Protected Sub lnkBuscarDisponibilidad_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles lnkBuscarDisponibilidad.Click
         Try
-            Dim oEndPoint As New EndpointAddress("http://66.239.100.162/WCFGDSConnector/Service.svc?wsdl")
-            Dim oBinding As New BasicHttpBinding
-            Dim oSR As New SRConnector.ServiceClient(oBinding, oEndPoint)
+            Dim oSR As New SRConnector.ServiceClient()
 
             Dim strFechaSalida As String() = Request.Form("txtFechaSalida").Split("/")
             Dim strFechaRetorno As String() = Request.Form("txtFechaRetorno").Split("/")
 
-            Dim oBERequest As New SRConnector.BERequest
+            Dim oBERequest As New SRConnector.BEConsultaDispo
             With oBERequest
-                .ArrivalDate = strFechaRetorno(0) & loMeses(Integer.Parse(strFechaRetorno(1)) - 1)
-                .DepartureDate = strFechaSalida(0) & loMeses(Integer.Parse(strFechaSalida(1)) - 1)
-                .DepartureHour = ""
-                .Destiny = Request.Form("txtDestino")
-                .NumAdt = Request.Form("cboAdt")
-                .NumAlternatives = "1"
-                .NumChd = "0"
-                .NumInf = "0"
-                .oBEGDSCredential = New SRConnector.BEGDSCredential With {.SabreLogin = "4004", .SabrePassword = "AGENCIA1"}
-                .oGDS = SRConnector.GDS.Sabre
-                .Origin = Request.Form("txtOrigen")
+                .FechaRetorno = strFechaRetorno(0) & loMeses(Integer.Parse(strFechaRetorno(1)) - 1)
+                .FechaSalida = strFechaSalida(0) & loMeses(Integer.Parse(strFechaSalida(1)) - 1)
+                .Destino = Request.Form("txtDestino")
+                .Adultos = Request.Form("cboAdt")
+                .Origen = Request.Form("txtOrigen")
             End With
 
-            Dim loBEDisponibilidad As List(Of SRConnector.BEAvailabilityResponse) = oSR.retrieveFlightAvailability(oBERequest)
+            Dim loBEDisponibilidad As List(Of SRConnector.BEDisponibilidades) = oSR.obtenerDisponibilidadVuelos(oBERequest)
 
             If loBEDisponibilidad IsNot Nothing AndAlso loBEDisponibilidad.Count > 0 Then
                 Session("Vuelos") = loBEDisponibilidad

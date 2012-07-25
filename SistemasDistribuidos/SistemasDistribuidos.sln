@@ -23,10 +23,58 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Reserva", "Reserva\", "{B3A
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "5692"
 	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7} = {613D6CC8-818C-4D47-82F1-AD63A851B1C7}
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E} = {21EF2CF0-263A-4511-89A3-0BF86560E17E}
+	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BLEmisiones", "BLEmisiones\BLEmisiones.vbproj", "{3FFE40FA-D298-452E-ACB6-8E213816BEDD}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DAEmisiones", "DAEmisiones\DAEmisiones.vbproj", "{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFConsultas", "WCFConsultas\", "{21EF2CF0-263A-4511-89A3-0BF86560E17E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{08DDE106-2657-47A8-B830-4F38E8167DB9}|BEEmisiones.dll;{3FFE40FA-D298-452E-ACB6-8E213816BEDD}|BLEmisiones.dll;{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}|DAEmisiones.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WCFConsultas"
+		Debug.AspNetCompiler.PhysicalPath = "WCFConsultas\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WCFConsultas\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WCFConsultas"
+		Release.AspNetCompiler.PhysicalPath = "WCFConsultas\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WCFConsultas\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2456"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFRegistro", "WCFRegistro\", "{613D6CC8-818C-4D47-82F1-AD63A851B1C7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}|DAEmisiones.dll;{08DDE106-2657-47A8-B830-4F38E8167DB9}|BEEmisiones.dll;{3FFE40FA-D298-452E-ACB6-8E213816BEDD}|BLEmisiones.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WCFRegistro"
+		Debug.AspNetCompiler.PhysicalPath = "WCFRegistro\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WCFRegistro\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WCFRegistro"
+		Release.AspNetCompiler.PhysicalPath = "WCFRegistro\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WCFRegistro\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "6646"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +126,26 @@ Global
 		{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1FD7E210-D3F4-4A70-85C5-CDADE8671D4B}.Release|x86.ActiveCfg = Release|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{21EF2CF0-263A-4511-89A3-0BF86560E17E}.Release|x86.ActiveCfg = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{613D6CC8-818C-4D47-82F1-AD63A851B1C7}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

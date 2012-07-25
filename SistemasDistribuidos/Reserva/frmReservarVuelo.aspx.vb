@@ -4,45 +4,45 @@ Imports BLEmisiones
 Partial Class frmReservarVuelo
     Inherits System.Web.UI.Page
 
-    Public oBEDisponibilidad As SRConnector.BEAvailabilityResponse
+    Public oBEDisponibilidad As SRConnector.BEDisponibilidades
     Private strIDVuelo As String
 
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Page.IsPostBack Then
             strIDVuelo = Request.QueryString("id")
-            Dim loBEDisponibilidades As List(Of SRConnector.BEAvailabilityResponse) = Session("Vuelos")
-            Dim oPred As New Predicate(Of SRConnector.BEAvailabilityResponse)(AddressOf getVuelo)
+            Dim loBEDisponibilidades As List(Of SRConnector.BEDisponibilidades) = Session("Vuelos")
+            Dim oPred As New Predicate(Of SRConnector.BEDisponibilidades)(AddressOf getVuelo)
 
             oBEDisponibilidad = loBEDisponibilidades.Find(oPred)
             Session("seleccion") = oBEDisponibilidad
         End If
     End Sub
 
-    Private Function getVuelo(ByVal oVuelo As SRConnector.BEAvailabilityResponse) As Boolean
-        Return oVuelo.lobeFlight.First.ID = strIDVuelo
+    Private Function getVuelo(ByVal oVuelo As SRConnector.BEDisponibilidades) As Boolean
+        Return oVuelo.loItinerario.First.IDItinerario = strIDVuelo
     End Function
 
     Protected Sub lnkReservar_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles lnkReservar.Click
+
+        Dim oSRRegistro As New SRRegistro.ServiceClient
+
         oBEDisponibilidad = Session("seleccion")
-  
-        Dim loItinerario As New List(Of BEItinerario)
 
-        For Each one In oBEDisponibilidad.lobeFlight
-            loItinerario.Add(New BEItinerario With {.Aerolinea = one.Airline,
-                                                    .FechaRetorno = "2012-" & one.ArrivalMonth.Split("T")(0),
-                                                    .HoraSalida = one.ArrivalMonth.Split("T")(1),
-                                                    .HoraLlegada = one.DepartureMonth.Split("T")(1),
-                                                    .NumeroVuelo = one.FlightNumber,
-                                                    .Origen = one.Origin,
-                                                    .Destino = one.Destiny,
-                                                    .FechaSalida = "2012-" & one.DepartureMonth.Split("T")(0)})
+        Dim loItinerario As New List(Of SRRegistro.BEItinerario)
+
+        For Each one In oBEDisponibilidad.loItinerario
+            loItinerario.Add(New SRRegistro.BEItinerario With {.Aerolinea = one.Aerolinea,
+                                                    .FechaRetorno = one.FechaRetorno,
+                                                    .HoraSalida = one.HoraSalida,
+                                                    .HoraLlegada = one.HoraLlegada,
+                                                    .NumeroVuelo = one.NumeroVuelo,
+                                                    .Origen = one.Origen,
+                                                    .Destino = one.Destino,
+                                                    .FechaSalida = one.FechaSalida})
         Next
-
-        Dim oBL As New BLReservas
-
-        Dim oBEReserva As New BEReserva
-
+         
+        Dim oBEReserva As New SRRegistro.BEReserva
 
         Dim strPNR As String = ""
         Dim rnd As New Random
@@ -56,7 +56,7 @@ Partial Class frmReservarVuelo
 
         oBEReserva.CodigoReserva = strPNR
         oBEReserva.loBEItinerario = loItinerario
-        Dim oBEPNrREsult As Boolean = oBL.insertarReservar(oBEReserva)
+        Dim oBEPNrREsult As Boolean = oSRRegistro.registrarReserva(oBEReserva)
         If oBEPNrREsult Then
             Response.Redirect("frmConfirmacion.aspx?pnr=" & oBEReserva.CodigoReserva)
         End If

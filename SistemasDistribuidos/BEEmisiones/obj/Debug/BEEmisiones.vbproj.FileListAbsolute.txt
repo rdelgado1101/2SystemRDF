@@ -18,3 +18,13 @@ C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BEEmisiones\o
 C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.dll
 C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.xml
 C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.pdb
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\bin\Debug\BEEmisiones.dll
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\bin\Debug\BEEmisiones.pdb
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\bin\Debug\BEEmisiones.xml
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.Resources.resources
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.dll
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.xml
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\BEEmisiones\obj\Debug\BEEmisiones.pdb

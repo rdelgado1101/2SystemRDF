@@ -120,6 +120,8 @@
     <span class="wise">Tipo</span>
     <select class="inp-text sele big">
       <option>Seleccione</option>
+      <option>Cash</option>
+      <option>Tarjeta Credito</option>
     </select>
   </div>
 
@@ -142,9 +144,6 @@
 
   <div class="fix"></div>
 
-  <button class="but reservar">
-   <span>AGREGAR PAGO</span>
-  </button>
 </div>
 </div>
 <div class="fix"></div>
@@ -152,7 +151,7 @@
  <!-- Regulaciones -->
 <div class="detallePago middle">
   <h2 class="dtitulo"><span>></span>Regulaciones</h2>
-    <asp:TextBox ID="txtRegulaciones" runat="server" />
+    <asp:TextBox ID="txtRegulaciones" Width="150px" runat="server" />
 
 </div>
 
@@ -165,10 +164,6 @@
     <input type="text" class="inp-text txt" value="1" />
   </div>
 
-  <div class="dato">
-    <span class="">Validating Carrier:</span>
-    <input type="text" name="FV" id="FV" class="inp-text txt" />
-  </div>
   <div class="fix"></div>
   <div class="dato">
     <span class="">Email Inv.:</span>
