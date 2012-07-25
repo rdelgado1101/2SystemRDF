@@ -11,3 +11,16 @@ C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\o
 C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.dll
 C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.xml
 C:\Users\alumnos\Desktop\SistemasDistribuidos\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.pdb
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\bin\Debug\DAEmisiones.dll
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\bin\Debug\DAEmisiones.pdb
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\bin\Debug\DAEmisiones.xml
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\bin\Debug\BEEmisiones.dll
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\bin\Debug\BEEmisiones.pdb
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\bin\Debug\BEEmisiones.xml
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.Resources.resources
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.dll
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.xml
+C:\Users\Administrator\Desktop\SD\rdelgado1101-2SystemRDF-58231c4\SistemasDistribuidos\DAEmisiones\obj\Debug\DAEmisiones.pdb

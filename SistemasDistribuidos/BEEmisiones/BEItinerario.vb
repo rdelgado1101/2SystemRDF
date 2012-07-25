@@ -1,11 +1,13 @@
-﻿Public Class BEItinerario
-    Property IDItinerario As Integer
-    Property NumeroVuelo As String
-    Property Aerolinea As String
-    Property Origen As String
-    Property Destino As String
-    Property FechaSalida As String
-    Property FechaRetorno As String
-    Property HoraSalida As String
-    Property HoraLlegada As String
+﻿Imports System.Runtime.Serialization
+<DataContract(), KnownType(GetType(BEItinerario))>
+Public Class BEItinerario
+    <DataMember()> Property IDItinerario As Integer
+    <DataMember()> Property NumeroVuelo As String
+    <DataMember()> Property Aerolinea As String
+    <DataMember()> Property Origen As String
+    <DataMember()> Property Destino As String
+    <DataMember()> Property FechaSalida As String
+    <DataMember()> Property FechaRetorno As String
+    <DataMember()> Property HoraSalida As String
+    <DataMember()> Property HoraLlegada As String
 End Class
