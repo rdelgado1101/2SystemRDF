@@ -1,0 +1,75 @@
+create database Emisiones
+go
+use Emisiones
+go
+Create Table tb_BEReserva(
+CodigoReserva varchar(255)
+)
+
+go
+
+create procedure sp_InsertBEReserva
+@CodigoReserva varchar(255)
+as
+Insert Into tb_BEReserva(CodigoReserva)
+Values(@CodigoReserva) 
+
+go
+
+create procedure sp_RetrieveBEReserva
+@CodigoReserva as varchar(255)
+As
+Select
+CodigoReserva
+From tb_BEReserva 
+where CodigoReserva = @CodigoReserva
+
+go
+
+Create Table tb_BEItinerario(
+IDItinerario int identity(1,1),
+CodigoReserva varchar(255),
+NumeroVuelo varchar(255),
+Aerolinea varchar(255),
+Origen varchar(255),
+Destino varchar(255),
+FechaSalida varchar(255),
+FechaRetorno varchar(255),
+HoraSalida varchar(255),
+HoraLlegada varchar(255)
+)
+
+go
+
+Create procedure sp_InsertBEItinerario
+@CodigoReserva varchar(255),
+@NumeroVuelo varchar(255),
+@Aerolinea varchar(255),
+@Origen varchar(255),
+@Destino varchar(255),
+@FechaSalida varchar(255),
+@FechaRetorno varchar(255),
+@HoraSalida varchar(255),
+@HoraLlegada varchar(255)
+as
+Insert Into tb_BEItinerario(CodigoReserva,NumeroVuelo,Aerolinea,Origen,Destino,FechaSalida,FechaRetorno,HoraSalida,HoraLlegada)
+Values(@CodigoReserva,@NumeroVuelo,@Aerolinea,@Origen,@Destino,@FechaSalida,@FechaRetorno,@HoraSalida,@HoraLlegada)
+
+go
+
+Create procedure sp_RetrieveBEItinerario
+@CodigoReserva as varchar(255)
+As
+Select
+IDItinerario
+NumeroVuelo,
+Aerolinea,
+Origen,
+Destino,
+FechaSalida,
+FechaRetorno,
+HoraSalida,
+HoraLlegada
+From tb_BEItinerario
+where CodigoReserva = @CodigoReserva
+
